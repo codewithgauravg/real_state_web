@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    opacity: 0;
+    color: white;
+}
+
+.hero-image:nth-child(1) {
+    background-image: url('hero.jpg');
+    animation: fadeInOut 10s infinite ease-in-out;
+}
+
+.hero-image:nth-child(2) {
+    background-image: url('hero2.jpg');
+    animation: fadeInOut 10s infinite ease-in-out;
+    animation-delay: 5s;
+}
+
+.hero-image.active {
+    opacity: 1;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #ff9900;
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* Small zoom-in effect */
+}
+
+/* Keyframes for Fade In and Out */
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Properties Section */
+/* Properties Section */
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.property {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+    flex: 1 1 calc(33.333% - 40px); /* Three columns layout */
+}
+
+.property:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.property img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.property img:hover {
+    transform: scale(1.05); /* Small zoom-in effect */
+}
+
+.property h3 {
+    margin: 15px 0;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff9900;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer .quick-links ul, footer .properties-links ul, footer .rera-certificates ul {
+    padding: 0;
+}
+
+footer .disclaimer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer .powered-by {
+    text-align: center;
+    margin-top: 10px;
+}

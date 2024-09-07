@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dream Homes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with 2 images and animation -->
+    <section class="hero">
+        <div class="hero-image active">
+            <div class="hero-content">
+                <h1>Find Your Dream Property</h1>
+                <p>Explore luxury villas, modern apartments, and cozy homes in the best locations.</p>
+                <a href="#properties" class="btn">Browse Properties</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-content">
+                <h1>Invest in Your Future</h1>
+                <p>Exclusive real estate opportunities in high-growth cities like Pune, Mumbai, and more.</p>
+                <a href="#contact" class="btn">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="properties" id="properties">
+    <div class="property">
+        <img src="Luxury Villa.jpeg" alt="House 1">
+        <h3>Luxury Villa</h3>
+        <p>Price: $1,200,000</p>
+    </div>
+    <div class="property">
+        <img src="Modern Apartment.jpeg" alt="House 2">
+        <h3>Modern Apartment</h3>
+        <p>Price: $850,000</p>
+    </div>
+    <div class="property">
+        <img src="CozyCottage.jpeg" alt="House 3">
+        <h3>Cozy Cottage</h3>
+        <p>Price: $450,000</p>
+    </div>
+    <div class="property">
+        <img src="Spacious Loft.jpeg" alt="House 4">
+        <h3>Spacious Loft</h3>
+        <p>Price: $950,000</p>
+    </div>
+    <div class="property">
+        <img src="BeachfrontCondo.jpeg" alt="House 5">
+        <h3>Beachfront Condo</h3>
+        <p>Price: $1,500,000</p>
+    </div>
+    <div class="property">
+        <img src="modenApartment.jpeg" alt="House 6">
+        <h3>Mountain Retreat</h3>
+        <p>Price: $700,000</p>
+    </div>
+</section>
+
+    <section class="contact" id="contact">
+        <h2>Reach Us via Email</h2>
+        <form action="#">
+            <label for="project">Choose Project:</label>
+            <select id="project" name="project">
+                <option value="villa">Luxury Villa</option>
+                <option value="apartment">Modern Apartment</option>
+                <option value="cottage">Cozy Cottage</option>
+            </select>
+
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Enter Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Enter Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Enter Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Submit Now</button>
+        </form>
+    </section>
+
+    <section class="about-investoxpert" id="about">
+        <h2>About InvestoXpert</h2>
+        <p>InvestoXpert is one of the fastest growing companies in the real estate arena, offering comprehensive real estate solutions to fulfill myriad requirements of customers.</p>
+    </section>
+
+    <!-- QR Code Section -->
+    <section class="qr-code">
+        <h2><b>Pay Your Advance</b></h2>
+        <img src="qrcode.jpg.jpg" alt="QR Code for Payment" height="230px">
+        <p>Scan the QR code to pay your advance securely and conveniently. Once scanned, you'll be redirected to our payment gateway to complete your transaction.</p>
+        <button class="btn">Pay Now</button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="properties-links">
+                <h3>All Properties</h3>
+                <ul>
+                    <li><a href="#">Pune</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Delhi</a></li>
+                    <li><a href="#">Gurgaon</a></li>
+                    <li><a href="#">Kolkata</a></li>
+                    <li><a href="#">Bangalore</a></li>
+                    <li><a href="#">Noida</a></li>
+                </ul>
+            </div>
+
+            <div class="rera-certificates">
+                <h3>RERA Certificates</h3>
+                <ul>
+                    <li>Haryana: HRERA-PKL-REA-180-2019</li>
+                    <li>Karnataka: PRM/KA/RERA/1251/446/AG/191015/001603</li>
+                    <li>Maharashtra: A09200023052</li>
+                    <li>Delhi: DLRERA2019A0092</li>
+                    <li>Uttar Pradesh: UPRERAAGT21108</li>
+                    <li>Telangana: A02400003050</li>
+                    <li>West Bengal: WBRERA/A/NORY2023/000210</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <p>Disclaimer: The content provided on this website is for information purposes only and does not constitute an offer to avail any service. The prices mentioned are subject to change without prior notice, and the availability of properties mentioned is not guaranteed. <a href="#">Read more</a></p>
+        </div>
+
+        <div class="powered-by">
+            <p>Digital Media Planned and Powered by GTF Technologies</p>
+        </div>
+
+        <p>© 2024 Dream Homes. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
